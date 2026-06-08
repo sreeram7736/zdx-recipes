@@ -50,6 +50,13 @@ tasks:
     subpath: '[core]/es_extended'
     dest: ./resources/[core]/es_extended
 
+  - action: download_file
+    path: ./tmp/illenium-appearance.zip
+    url: https://github.com/iLLeniumStudios/illenium-appearance/releases/latest/download/illenium-appearance.zip
+  - action: unzip
+    dest: ./resources/[standalone]
+    src: ./tmp/illenium-appearance.zip
+
   - action: download_github
     src: https://github.com/Bob74/bob74_ipl
     ref: master

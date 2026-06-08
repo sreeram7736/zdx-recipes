@@ -42,7 +42,7 @@ tasks:
 
   - action: move_path
     src: ./tmp/esx_core/[core]
-    dest: ./resources/[core]
+    dest: ./resources/[esx_core]
 
   - action: download_github
     src: https://github.com/sreeram7736/zdx_core

@@ -45,6 +45,12 @@ tasks:
     dest: ./resources/[core]
 
   - action: download_github
+    src: https://github.com/esx-framework/esx-core
+    ref: main
+    subpath: '[core]/es_extended'
+    dest: ./resources/[core]/es_extended
+
+  - action: download_github
     src: https://github.com/Bob74/bob74_ipl
     ref: master
     dest: ./resources/[standalone]/bob74_ipl

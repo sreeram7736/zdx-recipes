@@ -1,8 +1,8 @@
 $engine: 3
 $onesync: on
-name: ESX Legacy
-author: ESX Framework
-description: The official recipe of the most popular FiveM RP framework, containing Jobs, Housing, Vehicles & more!
+name: zdx Framework
+author: zidfps
+description: The official recipe of the FiveM cinematic framework, containing Housing, Vehicles & more!
 
 tasks:
   # Download default CFX resources
@@ -25,23 +25,23 @@ tasks:
     dest: ./server.cfg
 
   - action: move_path
-    src: ./tmp/recipe/esxLogo.png
-    dest: ./esxLogo.png
+    src: ./tmp/recipe/zdxLogo.png
+    dest: ./zdxLogo.png
 
-  # Download basic resources and ESX dependencies
+  # Download basic resources and zdx dependencies
 
   - action: connect_database
 
   - action: download_github
-    src: https://github.com/esx-framework/esx-core
+    src: https://github.com/sreeram7736/zdx_core
     ref: main
     dest: ./tmp/core
 
   - action: query_database
-    file: ./tmp/core/[SQL]/legacy.sql
+    file: ./tmp/core/[SQL]/zdx.sql
 
   - action: download_github
-    src: https://github.com/esx-framework/ESX-Legacy-Addons/
+    src: https://github.com/sreeram7736/zdx_addons
     ref: main
     dest: ./tmp/addons
 

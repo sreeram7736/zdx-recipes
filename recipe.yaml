@@ -56,7 +56,7 @@ tasks:
     ref: main
     dest: ./resources/[standalone]/pma-voice
   - action: download_file
-  
+
   ## OX
     path: ./tmp/ox_lib.zip
     url: https://github.com/communityox/ox_lib/releases/latest/download/ox_lib.zip
@@ -64,11 +64,19 @@ tasks:
     dest: ./resources/[ox]
     src: ./tmp/ox_lib.zip
   - action: download_file
+
     path: ./tmp/files/oxmysql.zip
     url: https://github.com/overextended/oxmysql/releases/latest/download/oxmysql.zip
   - action: unzip
     dest: ./resources/[standalone]
     src: ./tmp/files/oxmysql.zip
+
+  - action: download_file
+    path: ./tmp/ox_inventory.zip
+    url: https://github.com/communityox/ox_inventory/releases/latest/download/ox_inventory.zip
+  - action: unzip
+    dest: ./resources/[ox]
+    src: ./tmp/ox_inventory.zip
 
   ## Cleanup
   - action: remove_path

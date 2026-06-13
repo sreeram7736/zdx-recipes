@@ -52,11 +52,6 @@ tasks:
     src: ./tmp/illenium-appearance.zip
 
   - action: download_github
-    src: https://github.com/Bob74/bob74_ipl
-    ref: master
-    dest: ./resources/[standalone]/bob74_ipl
-
-  - action: download_github
     src: https://github.com/AvarianKnight/pma-voice
     ref: main
     dest: ./resources/[standalone]/pma-voice

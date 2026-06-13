@@ -57,6 +57,12 @@ tasks:
     dest: ./resources/[standalone]/pma-voice
   - action: download_file
 
+  - action: download_github
+    src: https://github.com/tomgrobbe/vMenu
+    ref: main
+    dest: ./resources/vMenu
+  - action: download_file
+
   ## OX
     path: ./tmp/ox_lib.zip
     url: https://github.com/communityox/ox_lib/releases/latest/download/ox_lib.zip

@@ -48,7 +48,7 @@ tasks:
     path: ./tmp/illenium-appearance.zip
     url: https://github.com/iLLeniumStudios/illenium-appearance/releases/latest/download/illenium-appearance.zip
   - action: unzip
-    dest: ./resources/[standalone]/illenium-appearance
+    dest: ./resources/[standalone]
     src: ./tmp/illenium-appearance.zip
 
   - action: download_github
@@ -56,31 +56,33 @@ tasks:
     ref: main
     dest: ./resources/[standalone]/pma-voice
 
-  - action: download_github
-    src: https://github.com/tomgrobbe/vMenu
-    ref: master
+  - action: download_file
+    path: ./tmp/vMenu.zip
+    url: https://github.com/TomGrobbe/vMenu/releases/download/v3.8.19/vMenu-3.8.19.zip
+  - action: unzip
     dest: ./resources/vMenu
+    src: ./tmp/vMenu.zip
 
   ## OX
   - action: download_file
     path: ./tmp/ox_lib.zip
     url: https://github.com/communityox/ox_lib/releases/latest/download/ox_lib.zip
   - action: unzip
-    dest: ./resources/[ox]/ox_lib
+    dest: ./resources/[ox]
     src: ./tmp/ox_lib.zip
 
   - action: download_file
     path: ./tmp/files/oxmysql.zip
     url: https://github.com/overextended/oxmysql/releases/latest/download/oxmysql.zip
   - action: unzip
-    dest: ./resources/[standalone]/oxmysql
+    dest: ./resources/[standalone]
     src: ./tmp/files/oxmysql.zip
 
   - action: download_file
     path: ./tmp/ox_inventory.zip
     url: https://github.com/communityox/ox_inventory/releases/latest/download/ox_inventory.zip
   - action: unzip
-    dest: ./resources/[ox]/ox_inventory
+    dest: ./resources/[ox]
     src: ./tmp/ox_inventory.zip
 
   ## Cleanup
